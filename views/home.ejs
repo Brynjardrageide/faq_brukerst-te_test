@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">home</a>
+      <a href="/data">data</a>
+      <a href="#">noe</a>
+      <a href="#">noe</a>
+      <a href="#">noe</a>
+      <a href="#">noe</a>
+    </nav>
+
+    <main>
+      <h1>Velkommen til hjemmesiden vår</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nostrum
+        quam, aliquid laboriosam praesentium, rem cum quod deserunt omnis dolor
+        sint veniam animi hic a doloremque similique dolores, magni nesciunt?
+      </p>
+      <% const maxFAQsToShow = 5; %>
+
+      <h1>Frequently Asked Questions</h1>
+      <ul>
+        <% faqData.slice(0, maxFAQsToShow).forEach((faq) => { %>
+        <li>
+          <strong>Tidsmerke:</strong> <%= faq.Tidsmerke %><br />
+          <strong>Spørsmål:</strong> <%= faq.Spørsmål %><br />
+          <strong>Svar:</strong> <%= faq.Svar %>
+        </li>
+        <% }); %>
+      </ul>
+    </main>
+    <footer>
+      <p>Footer</p>
+      <p href="https://github.com/Brynjardrageide">brynjar</p>
+    </footer>
+  </body>
+</html>

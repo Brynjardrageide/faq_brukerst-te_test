@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FAQ Page</title>
+  </head>
+  <body>
+    <h1>Frequently Asked Questions</h1>
+    <ul>
+      <% faqData.forEach((faq) => { %>
+      <li>
+        <strong>Tidsmerke:</strong> <%= faq.Tidsmerke %><br />
+        <strong>Spørsmål:</strong> <%= faq.Spørsmål %><br />
+        <strong>Svar:</strong> <%= faq.Svar %>
+      </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
