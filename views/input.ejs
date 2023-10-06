@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">home</a>
+      <a href="/data">data</a>
+      <a href="/input">ask Questions</a>
+      <a href="/svar">anser</a>
+      <a href="#">noe</a>
+      <a href="#">noe</a>
+    </nav>
+    <main>
+      <h1>har du et spørsmål</h1>
+      <form action="/submit" method="post">
+        <!-- Hidden input field for the timestamp -->
+        <input
+          type="hidden"
+          id="timestamp"
+          name="timestamp"
+          value="<%= timestamp %>"
+        />
+
+        <label for="question">Spørsmål:</label>
+        <input type="text" id="question" name="question" required />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </body>
+</html>
