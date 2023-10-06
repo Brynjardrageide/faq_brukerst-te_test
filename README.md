@@ -1,4 +1,24 @@
-# hvordan bruke sqllite
+# faq svar
+
+Du har jobbet med FAQ-oppgaven i en drøy uke og nå er det over en uke til neste gang. Derfor vil jeg du skal skrive ned noen notater til deg selv. De leveres her FØR du tar høstferie.
+
+Hva hadde du tenkt?
+
+- jeg hadde tenkt å ha en jemme kontor med spørsmål og svar en med data en hvor du kunne legge til og en hvor du kunne slette og svare og gjøre en søkemotor og css
+
+Hvor langt har du kommet?
+
+- jeg har komet til spøre data home lit svare
+
+Hva har du igjen?
+
+- ikke slete ikke css ikke søkemotor
+
+Hva vil du gjøre mer av/annerledes hvis du skulle gjort mer med oppgaven?¨
+
+- systemet med spørsmål og svar og css
+
+## hvordan bruke sqllite
 
 //koble til databasen
 //tutorioal
