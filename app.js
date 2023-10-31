@@ -38,6 +38,7 @@ app.get('/', async (req, res) => {
 });
 
 
+
 app.get('/data', (req, res) => {
     // Fetch data from the SQLite database
     db.all('SELECT * FROM faq', (err, rows) => {
@@ -90,6 +91,7 @@ app.get('/svar', (req, res) => {
     res.render('svar', { questions });
   });
 });
+
 app.post('/answer', (req, res) => {
   const questionId = req.body.questionId;
   const answer = req.body.answer;
@@ -103,7 +105,6 @@ app.post('/answer', (req, res) => {
       res.redirect('/svar'); // Redirect back to the answer page
   });
 });
-
 
 
 app.listen(process.env.PORT || 3000, () => console.log('App available on http://localhost:3000'));
